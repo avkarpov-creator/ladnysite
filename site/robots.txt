@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /demo/
+
+Sitemap: https://ladnysite.ru/sitemap.xml

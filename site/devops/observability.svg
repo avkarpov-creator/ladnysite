@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 160">
+  <style>
+    rect { fill: #324d40; stroke: #799586; }
+    text { fill: #f5f6f0; font: 600 15px system-ui, sans-serif; text-anchor: middle; }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0l8 4-8 4z" fill="#e8a93a"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#e8a93a" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M149 80H172"/>
+    <path d="M341 80H364"/>
+    <path d="M471 80H494"/>
+    <path d="M645 80H685V40H716"/>
+    <path d="M645 80H685V120H716"/>
+  </g>
+  <g>
+    <rect x="6" y="54" width="140" height="52" rx="9"/>
+    <text x="76" y="85">Production VPS</text>
+    <rect x="176" y="54" width="162" height="52" rx="9"/>
+    <text x="257" y="85">SSH Log Collection</text>
+    <rect x="368" y="54" width="100" height="52" rx="9"/>
+    <text x="418" y="85">FastAPI</text>
+    <rect x="498" y="54" width="144" height="52" rx="9"/>
+    <text x="570" y="85">Prometheus</text>
+    <rect x="720" y="14" width="174" height="52" rx="9"/>
+    <text x="807" y="45">Grafana</text>
+    <rect x="720" y="94" width="174" height="52" rx="9"/>
+    <text x="807" y="125">Alertmanager</text>
+  </g>
+</svg>

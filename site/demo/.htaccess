@@ -1,0 +1,4 @@
+# Демо-сайты не индексируем (дублирует robots.txt и meta robots)
+<IfModule mod_headers.c>
+Header set X-Robots-Tag "noindex"
+</IfModule>

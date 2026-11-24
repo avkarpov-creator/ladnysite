@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ровно — ремонт квартир с фиксированной сметой (демо)</title>
+<meta name="robots" content="noindex">
+<link href="../../fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--ink:#2A2D31;--muted:#6B7178;--level:#F5C518;--line:#E4E6E9;--bg:#FFFFFF;--soft:#F5F6F7}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:400 17px/1.6 "Inter Tight",sans-serif;color:var(--ink);background:var(--bg)}
+:focus-visible{outline:3px solid var(--level);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2{font-weight:800;line-height:1.05;letter-spacing:-.02em}
+.demo{background:#111;color:#ddd;font-size:14px;text-align:center;padding:8px 12px}
+.demo a{color:var(--level)}
+header{padding:24px 0 64px;border-bottom:1px solid var(--line)}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:64px;gap:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:24px;display:flex;align-items:center;gap:10px}
+/* spirit-level logo: the bubble is centred, i.e. "ровно" */
+.vial{width:46px;height:16px;border-radius:8px;background:var(--level);position:relative;border:2px solid var(--ink)}
+.vial::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:8px;border-radius:50%;background:#fff;transform:translate(-50%,-50%)}
+h1{font-size:clamp(40px,7vw,80px);max-width:13ch;margin-bottom:20px}
+header p{font-size:20px;color:var(--muted);max-width:42ch}
+section{padding:72px 0}
+h2{font-size:clamp(30px,4.5vw,46px);margin-bottom:28px}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:0;border:2px solid var(--ink);border-radius:16px;overflow:hidden}
+@media (max-width:760px){.calc{grid-template-columns:1fr}}
+.calc .in{padding:32px}
+.calc .out{padding:32px;background:var(--ink);color:#fff;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+label{display:block;font-weight:600;margin-bottom:8px}
+input[type=range]{width:100%;accent-color:var(--ink);margin-bottom:6px}
+.area{font-size:28px;font-weight:800;margin-bottom:22px}
+.types{display:grid;gap:10px}
+.types label{display:flex;justify-content:space-between;gap:12px;font-weight:400;border:2px solid var(--line);border-radius:10px;padding:12px 14px;cursor:pointer}
+.types input{accent-color:var(--ink);margin-right:8px}
+.types label:has(input:checked){border-color:var(--ink);background:var(--soft)}
+.sum{font-size:clamp(36px,5vw,52px);font-weight:800;color:var(--level);line-height:1}
+.out small{color:#B9BEC4;display:block;margin-top:8px}
+.btn{display:inline-block;background:var(--level);color:var(--ink);font-weight:800;padding:15px 24px;border-radius:10px;border:0;font-size:17px;cursor:pointer;text-decoration:none;text-align:center}
+.promise{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+@media (max-width:760px){.promise{grid-template-columns:1fr}}
+.promise b{display:block;font-size:20px;margin-bottom:6px}
+.promise p{color:var(--muted)}
+form{display:grid;grid-template-columns:1fr 1fr auto;gap:12px;align-items:end}
+@media (max-width:760px){form{grid-template-columns:1fr}}
+form input{width:100%;padding:14px;border:2px solid var(--line);border-radius:10px;font:inherit}
+.msg{margin-top:12px;min-height:1.6em;font-weight:600}
+footer{padding:28px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="demo">Демо-проект студии <a href="/">«Ладный сайт»</a>. Компания вымышлена, заявки не отправляются.</div>
+<header>
+  <div class="wrap">
+    <div class="top"><span class="logo"><span class="vial" aria-hidden="true"></span>Ровно</span><span>Ремонт квартир в Москве и области</span></div>
+    <h1>Ремонт по смете, которая не растёт</h1>
+    <p>Считаем стоимость до начала работ и фиксируем её в договоре. Если ошиблись в расчёте — доплачиваем мы.</p>
+  </div>
+</header>
+<main>
+<section>
+  <div class="wrap">
+    <h2>Сколько стоит ремонт</h2>
+    <div class="calc">
+      <div class="in">
+        <label for="a">Площадь квартиры</label>
+        <input id="a" type="range" min="20" max="150" value="54">
+        <div class="area"><output id="av">54</output> м²</div>
+        <div class="types" role="radiogroup" aria-label="Тип ремонта">
+          <label><span><input type="radio" name="t" value="6500">Косметический</span><span>6 500 ₽/м²</span></label>
+          <label><span><input type="radio" name="t" value="12000" checked>Капитальный</span><span>12 000 ₽/м²</span></label>
+          <label><span><input type="radio" name="t" value="19000">Под ключ с дизайном</span><span>19 000 ₽/м²</span></label>
+        </div>
+      </div>
+      <div class="out">
+        <div><span>Работы с черновыми материалами</span><div class="sum" id="sum" aria-live="polite">648 000 ₽</div><small>Срок: <span id="days">около 9 недель</span>. Точную смету даст прораб после замера.</small></div>
+        <a class="btn" href="#zamer">Вызвать замерщика бесплатно</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="background:var(--soft)">
+  <div class="wrap">
+    <div class="promise">
+      <div><b>Фиксированная смета</b><p>Цена в договоре не меняется, даже если работы заняли больше времени.</p></div>
+      <div><b>Фотоотчёт каждый день</b><p>Прораб присылает фото в Telegram — можно не ездить на объект.</p></div>
+      <div><b>Оплата по этапам</b><p>Платите только за принятую работу, этапами по 2–3 недели.</p></div>
+    </div>
+  </div>
+</section>
+<section id="zamer">
+  <div class="wrap">
+    <h2>Бесплатный замер</h2>
+    <form id="f">
+      <div><label for="n">Имя</label><input id="n" required autocomplete="name"></div>
+      <div><label for="p">Телефон</label><input id="p" type="tel" required autocomplete="tel"></div>
+      <button class="btn" type="submit">Вызвать замерщика</button>
+    </form>
+    <p class="msg" role="status" id="m"></p>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">Ровно — вымышленная компания. Сайт сделан студией «Ладный сайт».</div></footer>
+<script>
+const a=document.getElementById('a'),av=document.getElementById('av'),sum=document.getElementById('sum'),days=document.getElementById('days');
+const fmt=n=>n.toLocaleString('ru-RU')+' ₽';
+function calc(){const area=+a.value,rate=+document.querySelector('input[name=t]:checked').value;
+  av.textContent=area;sum.textContent=fmt(Math.round(area*rate/1000)*1000);
+  const w=Math.max(3,Math.round(area*rate/1e6*9/0.65));days.textContent='около '+w+' недель'}
+a.oninput=calc;document.querySelectorAll('input[name=t]').forEach(r=>r.onchange=calc);calc();
+document.getElementById('f').onsubmit=e=>{e.preventDefault();document.getElementById('m').textContent='Это демо: в настоящем сайте заявка с расчётом пришла бы прорабу в Telegram.'};
+</script>
+</body>
+</html>

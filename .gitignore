@@ -1,0 +1,15 @@
+.secrets/
+.agents/
+.codex/
+.aws/
+.env
+.env.*
+*.pem
+*.key
+*.ppk
+*.tfstate*
+__pycache__/
+*.pyc
+/SEO-STATUS.md
+/webmaster-queries.csv
+/f94de978-a536-4eb2-9620-0b4db2ea8fe5.jpg

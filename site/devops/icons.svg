@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="server" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M6 6.5h2m-2 11h2"/></g>
+  </symbol>
+  <symbol id="code" viewBox="0 0 24 24">
+    <path d="m8 6-6 6 6 6m8-12 6 6-6 6m-2-15-4 18" fill="none" stroke="currentColor" stroke-width="1.7"/>
+  </symbol>
+  <symbol id="box" viewBox="0 0 24 24">
+    <path d="m12 2 9 5v10l-9 5-9-5V7zM3 7l9 5 9-5m-9 5v10" fill="none" stroke="currentColor" stroke-width="1.7"/>
+  </symbol>
+  <symbol id="branch" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="6" cy="5" r="2.5"/><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="5" r="2.5"/><path d="M6 8v8m0-2c0-4 12 0 12-6"/></g>
+  </symbol>
+  <symbol id="pulse" viewBox="0 0 24 24">
+    <path d="M2 13h5l3-8 4 14 3-6h5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+  </symbol>
+  <symbol id="terminal" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m6 9 3 3-3 3m6 0h5"/></g>
+  </symbol>
+  <symbol id="storage" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.7"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14a8 3 0 0 0 16 0V5M4 12a8 3 0 0 0 16 0"/></g>
+  </symbol>
+</svg>

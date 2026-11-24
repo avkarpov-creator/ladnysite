@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Контент-завод для сайта: статьи и короткие ролики по графику — Ладный сайт</title>
+<meta name="description" content="Регулярный контент для сайта и соцсетей: SEO-статьи и вертикальные ролики с ИИ-аватаром и субтитрами. Каждый материал вы одобряете в Telegram, публикация — по расписанию на сайт, VK, Telegram, YouTube Shorts и RuTube.">
+<link rel="canonical" href="https://ladnysite.ru/kontent-zavod/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Александр Карпов">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Ладный сайт">
+<meta property="og:url" content="https://ladnysite.ru/kontent-zavod/">
+<meta property="og:title" content="Контент-завод: статьи и ролики для вашего сайта по графику">
+<meta property="og:description" content="Статьи и короткие ролики с ИИ-аватаром. Вы одобряете каждый материал в Telegram — остальное работает само.">
+<meta property="og:image" content="https://ladnysite.ru/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://ladnysite.ru/kontent-zavod/#service",
+      "name": "Контент-завод для сайта",
+      "serviceType": "Регулярное производство статей и коротких видео для сайта и соцсетей",
+      "url": "https://ladnysite.ru/kontent-zavod/",
+      "provider": {"@id": "https://ladnysite.ru/#studio"},
+      "areaServed": {"@type": "Country", "name": "Россия"},
+      "offers": {"@type": "Offer", "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": 20000, "priceCurrency": "RUB", "unitText": "месяц"}},
+      "description": "SEO-статьи и вертикальные ролики с ИИ-аватаром и субтитрами, ручное одобрение в Telegram и публикация по расписанию."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Ладный сайт", "item": "https://ladnysite.ru/"},
+        {"@type": "ListItem", "position": 2, "name": "Контент-завод", "item": "https://ladnysite.ru/kontent-zavod/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Поисковики не накажут за тексты от ИИ?", "acceptedAnswer": {"@type": "Answer", "text": "Яндекс и Google оценивают пользу текста, а не то, как он написан. Плохо ранжируются пустые тексты, написанные ради ключевых слов. Поэтому каждый материал строится на фактах из вашего брифа, я его проверяю, а вы одобряете перед публикацией."}},
+        {"@type": "Question", "name": "Может ли ИИ выдумать цену или акцию?", "acceptedAnswer": {"@type": "Answer", "text": "Цены, сроки и даты берутся только из вашего брифа. Если факта в брифе нет, его нет и в материале. Плюс ручное одобрение: без вашей кнопки ничего не публикуется."}},
+        {"@type": "Question", "name": "Чьё лицо и голос будут в роликах?", "acceptedAnswer": {"@type": "Answer", "text": "На выбор: нейтральный ИИ-аватар или ваш цифровой двойник по вашему видео и голосу — только с вашего письменного согласия. Можно и без аватара: футажи, фото работ и субтитры."}}
+      ]
+    }
+  ]
+}
+</script>
+<meta name="theme-color" content="#F5F6F0">
+<link href="/fonts/fonts.css" rel="stylesheet">
+<link href="/css/service.css" rel="stylesheet">
+<style>
+/* макет сообщения на одобрение в Telegram */
+.tgmsg{background:#EEF3EF;border-radius:20px;padding:16px}
+.tgmsg .from{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);margin-bottom:10px}
+.tgmsg .from i{width:22px;height:22px;border-radius:50%;background:#2AABEE;display:grid;place-items:center;flex:none}
+.tgmsg .bubble{background:#fff;border-radius:16px 16px 16px 4px;padding:12px 14px;font-size:14.5px;line-height:1.45;box-shadow:0 6px 18px -10px rgba(20,40,28,.3)}
+.tgmsg .bubble b{display:block;margin-bottom:4px}
+.tgmsg .thumb{margin:10px 0;aspect-ratio:9/16;max-height:190px;border-radius:12px;background:radial-gradient(120% 70% at 30% 0%,#9DC1A6 0%,#4E7E5D 45%,#2F5240 100%);position:relative;overflow:hidden}
+.tgmsg .thumb::before{content:"";position:absolute;left:50%;top:38%;width:58px;height:58px;transform:translate(-50%,-50%);border-radius:50%;background:rgba(255,255,255,.85)}
+.tgmsg .thumb::after{content:"Баня 6×4 за 3 недели";position:absolute;left:10px;right:10px;bottom:14px;text-align:center;color:#fff;font:700 12px/1.3 Manrope,sans-serif;background:rgba(31,42,36,.55);border-radius:8px;padding:6px}
+.tgmsg .btns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.tgmsg .btns span{background:#fff;border-radius:12px;padding:9px;text-align:center;font-weight:700;font-size:14px;color:#2A8AC4}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap">
+    <a class="logo" href="/">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="10" fill="#3F6B4E"/><path d="M9 22l6-11 4 7 3-4 4 8z" fill="#E8A93A"/></svg>
+      Ладный сайт
+    </a>
+    <nav aria-label="Разделы">
+      <a href="/#work">Работы</a>
+      <a href="/seo/">SEO</a>
+      <a href="/kontent-zavod/" aria-current="page">Контент-завод</a>
+      <a href="/#prices">Цены</a>
+    </nav>
+    <a class="btn" href="https://t.me/Baller23"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M21 4L2 11.5l6 2 2 6.5 3.5-4.5 5 3.5z"/></svg><span>Написать в Telegram</span></a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <div class="wrap">
+    <div>
+      <p class="crumbs rise"><a href="/">Главная</a> · Контент-завод</p>
+      <h1 class="rise">Контент-завод: статьи и ролики для сайта <em>каждую неделю</em></h1>
+      <p class="lead rise" style="animation-delay:.12s">Настраиваю конвейер, который сам готовит статьи и короткие видео о вашем бизнесе. Вы только нажимаете «Одобрить» в Telegram — публикация уходит по расписанию.</p>
+      <div class="actions rise" style="animation-delay:.24s">
+        <a class="btn" href="https://t.me/Baller23">Обсудить контент-план <span class="ar">→</span></a>
+        <a class="btn ghost" href="#how">Как это работает</a>
+      </div>
+      <ul class="perks rise" style="animation-delay:.36s">
+        <li>Ничего не выходит без вашего одобрения</li>
+        <li>Цены и даты — только из вашего брифа</li>
+        <li>Договор и чек</li>
+      </ul>
+    </div>
+    <div class="panel" aria-label="Пример сообщения на одобрение в Telegram">
+      <div class="tgmsg">
+        <div class="from"><i><svg width="12" height="12" viewBox="0 0 24 24"><path fill="#fff" d="M21 4L2 11.5l6 2 2 6.5 3.5-4.5 5 3.5z"/></svg></i>Контент-завод · сейчас</div>
+        <div class="bubble">
+          <b>Новый ролик на проверку</b>
+          22 секунды, 9:16, субтитры. Публикация: четверг, 19:00.
+          <div class="thumb" aria-hidden="true"></div>
+          VK · Telegram · YouTube Shorts · RuTube
+        </div>
+        <div class="btns"><span>✓ Одобрить</span><span>↻ Переделать</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="inside">
+  <div class="wrap">
+    <div data-r><span class="kicker">Что производит</span><h2>Что получает ваш бизнес</h2>
+    <p class="sub">Регулярный поток материалов для сайта и соцсетей — без найма копирайтера, монтажёра и SMM-щика.</p></div>
+    <div class="offer">
+      <div data-r><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3F6B4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 11h7M9 15h7M9 7h3"/></svg></div><h3>Статьи для сайта</h3><p>По плану из поисковых запросов ваших клиентов: с заголовками, картинками и ссылками на ваши услуги. Публикуются в блог сайта автоматически.</p></div>
+      <div data-r><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3F6B4E" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 9.5v5l4-2.5z"/></svg></div><h3>Короткие ролики 9:16</h3><p>15–40 секунд: сценарий, озвучка, монтаж, субтитры. Для Shorts, клипов VK, Telegram и RuTube.</p></div>
+      <div data-r><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3F6B4E" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div><h3>ИИ-аватар</h3><p>Ведущий в кадре, который говорит вашим текстом с точным движением губ. Нейтральный аватар или ваш цифровой двойник — по вашему согласию.</p></div>
+      <div data-r><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3F6B4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg></div><h3>Публикация по расписанию</h3><p>Сайт, VK, Telegram-канал, YouTube Shorts, RuTube. В лучшее время, без ручной выкладки в каждую площадку.</p></div>
+      <div data-r><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3F6B4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h3>Статистика</h3><p>Какие темы приводят людей на сайт и в заявки. Контент-план корректируется по цифрам, а не по ощущениям.</p></div>
+      <div data-r><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3F6B4E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><h3>Факты под контролем</h3><p>Цены, сроки, акции и даты ИИ берёт только из вашего брифа. Нет факта в брифе — нет его и в материале.</p></div>
+      <div class="dark" data-r><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E8A93A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4L2 11.5l6 2 2 6.5 3.5-4.5 5 3.5z"/></svg></div><h3>Последнее слово — за вами</h3><p>Каждая статья и каждый ролик приходят вам в Telegram с кнопками «Одобрить» и «Переделать». Ничего не публикуется без вашего решения — даже если всё работает автоматически.</p></div>
+      <div data-r><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3F6B4E" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg></div><h3>Вместе с SEO</h3><p>Статьи закрывают запросы, по которым вас ищут. Лучше всего работает в паре с <a href="/seo/">SEO-продвижением</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div data-r><span class="kicker">Процесс</span><h2>Как это работает</h2>
+    <p class="sub">Один раз настраиваем — дальше конвейер работает по графику, а вы тратите пару минут в неделю на одобрение.</p></div>
+    <ol class="steps five">
+      <li data-r><b>Бриф</b><p>Услуги, цены, тон, фото работ, частые вопросы клиентов. Это единственный источник фактов.</p></li>
+      <li data-r><b>Контент-план</b><p>Темы из поисковых запросов и вопросов клиентов, график выхода.</p></li>
+      <li data-r><b>Производство</b><p>Тексты, озвучка, аватар, монтаж и субтитры. Я проверяю результат.</p></li>
+      <li data-r><b>Одобрение</b><p>Материал приходит вам в Telegram. Одна кнопка — и он в очереди.</p></li>
+      <li data-r><b>Публикация</b><p>Выходит по расписанию на сайт и площадки. Раз в месяц — отчёт.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div data-r><span class="kicker">Проверить вживую</span><h2>Работает на моих проектах</h2>
+    <p class="sub">Конвейер я сначала построил для себя. Результат можно посмотреть.</p></div>
+    <div class="proof">
+      <a href="https://mir-doma.pro" target="_blank" rel="noopener" data-r><span class="tag">Рабочий проект</span><h3>Мир дома</h3><p>Журнал про дом, дачу и огород. Статьи готовятся по контент-плану и публикуются на сайт автоматически.</p><span class="url">mir-doma.pro →</span></a>
+      <a href="https://nordic-aframe.ru" target="_blank" rel="noopener" data-r><span class="tag">Рабочий проект</span><h3>Nordic A-frame</h3><p>Сайт аренды дома в лесу. Для него делаю короткие атмосферные ролики из фото и видео дома.</p><span class="url">nordic-aframe.ru →</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="price">
+  <div class="wrap">
+    <div data-r><span class="kicker">Стоимость</span><h2>Сколько стоит</h2></div>
+    <div class="cost">
+      <div class="main" data-r>
+        <h3>Настройка + ежемесячный пакет</h3>
+        <div class="sum">от 20 000 ₽/мес</div>
+        <p>Итог зависит от того, что нужно: только статьи, только ролики или всё вместе, сколько материалов в месяц и на какие площадки. Точную сумму фиксирую в договоре.</p>
+        <p class="extra">Цена — за мою работу. Сервисы (генерация текстов, голоса и видео через API нейросетей, SEO-инструменты) оплачиваются отдельно по их тарифам и зависят от объёма: 4 ролика в месяц и 30 — разные суммы. Посчитаю до старта, чтобы бюджет был понятен заранее.</p>
+        <a class="btn honey" href="https://t.me/Baller23">Обсудить пакет <span class="ar">→</span></a>
+      </div>
+      <div class="side" data-r>
+        <h3>Что подготовить</h3>
+        <ul>
+          <li>Адрес сайта и ссылки на соцсети</li>
+          <li>Список услуг и актуальные цены</li>
+          <li>Фото и видео ваших работ</li>
+          <li>Вопросы, которые чаще всего задают клиенты</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div data-r><span class="kicker">Вопросы</span><h2>Частые вопросы</h2></div>
+    <div class="faq" data-r>
+      <details><summary>Поисковики не накажут за тексты от ИИ?</summary><p>Яндекс и Google оценивают пользу текста, а не то, как он написан. Плохо ранжируются пустые тексты, написанные ради ключевых слов. Поэтому каждый материал строится на фактах из вашего брифа, я его проверяю, а вы одобряете перед публикацией.</p></details>
+      <details><summary>Может ли ИИ выдумать цену или акцию?</summary><p>Цены, сроки и даты берутся только из вашего брифа. Если факта в брифе нет, его нет и в материале. Плюс ручное одобрение: без вашей кнопки ничего не публикуется.</p></details>
+      <details><summary>Чьё лицо и голос будут в роликах?</summary><p>На выбор: нейтральный ИИ-аватар или ваш цифровой двойник по вашему видео и голосу — только с вашего письменного согласия. Можно и без аватара: футажи, фото работ и субтитры.</p></details>
+      <details><summary>У меня сайт не от вас. Подключите?</summary><p>Да. Статьи публикуются в WordPress и в большинство сайтов, где есть админка или API. Если автоматическая публикация невозможна — буду присылать готовые материалы для выкладки.</p></details>
+      <details><summary>Почему сервисы оплачиваются отдельно?</summary><p>Тексты, голос и видео генерируются через API нейросетей, и их цену устанавливают сами сервисы — она зависит от объёма. Четыре ролика в месяц и тридцать стоят по-разному. Поэтому я не закладываю это в свою цену «с запасом», а считаю под ваш проект до старта.</p></details>
+      <details><summary>Что если ролик не понравился?</summary><p>Нажимаете «Переделать» и пишете, что не так. Материал возвращается в работу, а в очередь встаёт следующий.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<section class="contact" id="contact">
+  <div class="wrap" data-r>
+    <h2>Расскажите о бизнесе — предложу контент-план</h2>
+    <p>Подскажу, какие темы и форматы дадут вам клиентов, и сколько это будет стоить. Отвечаю в течение дня.</p>
+    <div class="row">
+      <a class="btn honey" href="https://t.me/Baller23">Написать в Telegram <span class="ar">→</span></a>
+      <a class="btn ghost" href="tel:+79265923266">+7 926 592-32-66</a>
+      <a class="btn ghost" href="mailto:avkarpov85@gmail.com">avkarpov85@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <span>© 2026 Ладный сайт. Александр Карпов, самозанятый.</span>
+  <div class="docs"><a href="/">Главная</a><a href="/seo/">SEO-продвижение</a><a href="/privacy/">Политика обработки персональных данных</a><button type="button" id="consent-open">Настройки cookie</button></div>
+</div></footer>
+
+<div class="consent" id="consent" role="dialog" aria-labelledby="consent-title" aria-describedby="consent-text">
+  <b id="consent-title">Файлы cookie</b>
+  <p id="consent-text">Сайт работает без cookie. С вашего согласия подключится Яндекс.Метрика: она покажет мне, какие разделы полезны, а какие стоит доработать. Подробнее — в <a href="/privacy/">политике обработки данных</a>.</p>
+  <div class="row">
+    <button type="button" data-consent="all">Принять</button>
+    <button type="button" data-consent="necessary">Только необходимые</button>
+  </div>
+</div>
+
+<script src="/js/site.js"></script>
+</body>
+</html>

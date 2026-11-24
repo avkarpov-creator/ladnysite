@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F5F6F0">
+  <title>Александр Карпов — DevOps Engineer | Техническое портфолио</title>
+  <meta name="description" content="Портфолио DevOps-инженера Александра Карпова. Linux, Docker, Kubernetes, Terraform, Ansible, CI/CD, Prometheus и Grafana. Реальные инфраструктурные проекты и инженерный опыт.">
+  <link rel="canonical" href="https://ladnysite.ru/devops/">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Ладный сайт">
+  <meta property="og:title" content="Александр Карпов — DevOps Engineer | Техническое портфолио">
+  <meta property="og:description" content="Инфраструктурные проекты и инженерный опыт Александра Карпова. Linux, IaC, CI/CD, Kubernetes и мониторинг.">
+  <meta property="og:url" content="https://ladnysite.ru/devops/">
+  <meta property="og:image" content="https://ladnysite.ru/img/aleksandr-karpov.webp">
+  <meta property="og:image:alt" content="Александр Карпов">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="/css/service.css">
+  <link rel="stylesheet" href="/devops/portfolio.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": "https://ladnysite.ru/devops/#profile",
+    "url": "https://ladnysite.ru/devops/",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://ladnysite.ru/devops/#person",
+      "name": "Александр Карпов",
+      "jobTitle": "DevOps Engineer",
+      "image": "https://ladnysite.ru/img/aleksandr-karpov.webp",
+      "url": "https://ladnysite.ru/devops/",
+      "sameAs": ["https://github.com/avkarpov-creator"]
+    }
+  }
+  </script>
+</head>
+<body class="portfolio">
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<header class="portfolio-header">
+  <div class="wrap">
+    <a class="logo" href="/">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="10" fill="#3F6B4E"/><path d="M9 22l6-11 4 7 3-4 4 8z" fill="#E8A93A"/></svg>
+      Ладный сайт
+    </a>
+    <nav aria-label="Разделы портфолио">
+      <a href="#stack">Стек</a>
+      <a href="#projects">Проекты</a>
+      <a href="#education">Образование</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <section class="portfolio-hero" aria-labelledby="intro-title">
+    <div class="wrap hero-layout">
+      <div>
+        <h1 id="intro-title">Александр Карпов <span lang="en">— DevOps Engineer</span></h1>
+        <p class="specialties" lang="en">Linux Infrastructure · Infrastructure as Code · CI/CD · Kubernetes · Observability</p>
+        <p class="intro">Инженер с многолетним опытом эксплуатации критичной IT-инфраструктуры. Занимаюсь администрированием Linux, автоматизацией развёртывания веб-сервисов, контейнеризацией и построением систем мониторинга. Ранее 12 лет работал во ВГТРК.</p>
+        <div class="actions">
+          <a class="btn" href="#projects">Смотреть технические проекты</a>
+          <a class="btn ghost" href="#contact">Связаться со мной</a>
+          <a class="btn ghost" href="https://github.com/avkarpov-creator">GitHub</a>
+        </div>
+      </div>
+      <aside class="hero-index" aria-labelledby="index-title">
+        <h2 id="index-title">Кейсы</h2>
+        <ul>
+          <li><a href="#vps-iac"><strong lang="en">VPS Infrastructure as Code</strong><span>Локальная проверка пройдена</span></a></li>
+          <li><a href="#observability"><strong lang="en">Kubernetes Observability</strong><span>Лабораторный стенд</span></a></li>
+          <li><a href="#recovery"><strong lang="en">Disaster Recovery</strong><span>Практический кейс</span></a></li>
+          <li><a href="#production"><strong lang="en">Production Web Infrastructure</strong><span>Коммерческие проекты</span></a></li>
+          <li><a href="#vgtrk"><strong>ВГТРК</strong><span>Критичная инфраструктура · 2011–2023</span></a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section id="stack" aria-labelledby="stack-title">
+    <div class="wrap">
+      <h2 id="stack-title">Технологический стек</h2>
+      <div class="stack-grid">
+        <div class="stack-card">
+          <h3><svg aria-hidden="true"><use href="icons.svg#server"/></svg><span lang="en">Infrastructure</span></h3>
+          <p><strong>Практика</strong> Linux, Ubuntu, Debian, Yandex Cloud, SSH, Nginx, DNS, TCP/IP, SSL/TLS</p>
+        </div>
+        <div class="stack-card">
+          <h3><svg aria-hidden="true"><use href="icons.svg#code"/></svg><span lang="en">Infrastructure as Code</span></h3>
+          <p><strong>Локальная практика</strong> Terraform, Ansible</p>
+        </div>
+        <div class="stack-card">
+          <h3><svg aria-hidden="true"><use href="icons.svg#box"/></svg><span lang="en">Containers &amp; Orchestration</span></h3>
+          <p><strong>Практика</strong> Docker, Docker Compose</p>
+          <p><strong>Лабораторный стенд</strong> Kubernetes, kind</p>
+        </div>
+        <div class="stack-card">
+          <h3><svg aria-hidden="true"><use href="icons.svg#branch"/></svg><span lang="en">CI/CD</span></h3>
+          <p><strong>Практика</strong> Git, GitHub Actions</p>
+          <p><strong>Обучение</strong> GitLab CI</p>
+        </div>
+        <div class="stack-card">
+          <h3><svg aria-hidden="true"><use href="icons.svg#pulse"/></svg><span lang="en">Observability</span></h3>
+          <p><strong>Лабораторный стенд</strong> Prometheus, Grafana, Alertmanager</p>
+        </div>
+        <div class="stack-card">
+          <h3><svg aria-hidden="true"><use href="icons.svg#terminal"/></svg><span lang="en">Programming &amp; Automation</span></h3>
+          <p><strong>Практика</strong> Python, Bash</p>
+          <p><strong>Лабораторный стенд</strong> FastAPI</p>
+        </div>
+        <div class="stack-card">
+          <h3><svg aria-hidden="true"><use href="icons.svg#storage"/></svg><span lang="en">Data &amp; Storage</span></h3>
+          <p><strong>Практика</strong> RAID, Synology</p>
+          <p><strong>Изучаю</strong> PostgreSQL</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" aria-labelledby="projects-title">
+    <div class="wrap">
+      <h2 id="projects-title">Технические проекты</h2>
+      <div class="project-list">
+        <!-- Новый кейс оформляется как article.project с уникальным id. -->
+        <article id="vps-iac" class="project" aria-labelledby="vps-title">
+          <div class="project-head">
+            <h3 id="vps-title" lang="en">VPS Infrastructure as Code</h3>
+            <p class="status pending">Разработан · локально протестирован</p>
+          </div>
+          <p>Задача — создать воспроизводимую VPS-инфраструктуру с автоматизированной настройкой операционной системы и прикладных сервисов.</p>
+          <figure>
+            <figcaption>Архитектура развёртывания</figcaption>
+            <picture>
+              <source media="(max-width: 650px)" srcset="vps-mobile.svg" width="320" height="384">
+              <img src="vps.svg" width="900" height="102" loading="lazy" alt="Terraform подготавливает ресурсы Yandex Cloud. Ansible настраивает сервер. Docker Compose запускает Nginx и приложение.">
+            </picture>
+          </figure>
+          <p class="project-stack">Terraform · Yandex Cloud · Ansible · Docker Compose · Nginx · Bash · GitHub Actions · Gitleaks</p>
+          <div class="project-details">
+            <div>
+              <h4>Реализовано</h4>
+              <ul>
+                <li>Terraform-конфигурация для Yandex Cloud описывает виртуальную машину, сеть, подсеть, статический IPv4 и группы безопасности.</li>
+                <li>Ansible настраивает Linux, SSH, пользователей и firewall, устанавливает Docker и Nginx. Docker Compose развёртывает тестовое приложение.</li>
+                <li><code>deploy.sh</code> передаёт параметры Terraform в Ansible. Процедуры развёртывания и отката задокументированы.</li>
+                <li>GitHub Actions проверяет конфигурации, Gitleaks ищет секреты.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Результаты проверки</h4>
+              <ul>
+                <li>Пройдены <code>terraform validate</code> и синтаксические проверки Ansible.</li>
+                <li>Проверен локальный запуск Docker Compose и Nginx.</li>
+                <li>Проверена обработка ошибок скриптом развёртывания.</li>
+              </ul>
+              <p>Облачное развёртывание ожидает проверки.</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="observability" class="project" aria-labelledby="observability-title">
+          <div class="project-head">
+            <h3 id="observability-title" lang="en">Kubernetes Observability</h3>
+            <p class="status lab">Работающий лабораторный проект</p>
+          </div>
+          <p>Задача — настроить мониторинг двух действующих сайтов с сохранением их рабочей инфраструктуры. Источники метрик — действующие веб-сервисы, а сбор и обработка выполняются в лабораторном кластере kind на WSL2.</p>
+          <figure>
+            <figcaption>Поток данных мониторинга</figcaption>
+            <picture>
+              <source media="(max-width: 650px)" srcset="observability-mobile.svg" width="320" height="364">
+              <img src="observability.svg" width="900" height="160" loading="lazy" alt="Журналы с production VPS собираются по SSH. FastAPI предоставляет метрики Prometheus. Grafana визуализирует метрики, Alertmanager обрабатывает оповещения Prometheus.">
+            </picture>
+          </figure>
+          <!-- Согласованные скриншоты Grafana добавляются здесь как figure с подписью. -->
+          <p class="project-stack">Kubernetes · kind · WSL2 · SSH · FastAPI · Prometheus · Grafana · Alertmanager</p>
+          <div class="project-details">
+            <div>
+              <h4>Реализовано</h4>
+              <ul>
+                <li>Каждые 30 секунд по SSH собираются данные журналов сайтов для расчёта агрегированных HTTP-метрик.</li>
+                <li>FastAPI предоставляет метрики для Prometheus. В Grafana видны HTTP-запросы, ошибки 5xx и популярные страницы.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Результаты проверки</h4>
+              <ul>
+                <li>Проверено срабатывание алертов при остановке приложения.</li>
+                <li>Проверено восстановление после повторного запуска приложения.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article id="recovery" class="project" aria-labelledby="recovery-title">
+          <div class="project-head">
+            <h3 id="recovery-title" lang="en">Disaster Recovery — Yandex Cloud</h3>
+            <p class="status">Выполненный практический кейс</p>
+          </div>
+          <p>Задача — восстановить доступность веб-инфраструктуры после инцидента у хостинг-провайдера.</p>
+          <p><strong>Архитектура.</strong> DNS направляет трафик на резервную виртуальную машину в Yandex Cloud, а Nginx принимает HTTPS-запросы.</p>
+          <p class="project-stack">Yandex Cloud · Linux · Nginx · DNS · HTTPS/TLS · Terraform</p>
+          <div class="project-details">
+            <div>
+              <h4>Реализовано</h4>
+              <p>Вручную создана резервная ВМ, настроены Linux, Nginx, DNS и HTTPS/TLS. Для последующей автоматизации подготовлена конфигурация Terraform.</p>
+            </div>
+            <div>
+              <h4>Результат</h4>
+              <p>Доступность веб-инфраструктуры восстановлена на резервной ВМ.</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="production" class="project" aria-labelledby="production-title">
+          <div class="project-head">
+            <h3 id="production-title" lang="en">Production Web Infrastructure</h3>
+            <p class="status">Действующие коммерческие проекты</p>
+          </div>
+          <p>Задача — эксплуатировать веб-сервисы и автоматизировать публикацию изменений.</p>
+          <p><strong>Архитектура.</strong> Git и GitHub Actions используются для проверки и публикации изменений. Стек инфраструктуры включает Linux, Nginx, Docker и HTTPS.</p>
+          <p class="project-stack">Linux · Nginx · Docker · HTTPS · Git · GitHub Actions · Python</p>
+          <div class="project-details">
+            <div>
+              <h4>Реализовано</h4>
+              <ul>
+                <li>Публикация через Git, синхронизация материалов по SHA и проверка данных на Python в GitHub Actions.</li>
+                <li>Журналирование изменений, диагностика ошибок, мониторинг доступности и HTTP-метрик.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Результат</h4>
+              <p>Два сайта находятся в эксплуатации.</p>
+              <ul class="project-links">
+                <li><a href="https://nordic-aframe.ru/">nordic-aframe.ru</a></li>
+                <li><a href="https://mir-doma.pro/">mir-doma.pro</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article id="vgtrk" class="project" aria-labelledby="vgtrk-title">
+          <div class="project-head">
+            <h3 id="vgtrk-title"><span lang="en">Critical Infrastructure</span> — ВГТРК</h3>
+            <p class="status">Инженерный опыт · 2011–2023</p>
+          </div>
+          <p>Задача — поддерживать доступность инфраструктуры четырёх телевизионных студий, диагностировать сбои и обеспечивать техническое сопровождение прямых эфиров федерального уровня.</p>
+          <p><strong>Архитектура.</strong> Около 70 рабочих станций Windows, macOS и Linux, рендер-ферма из шести узлов, сетевые хранилища Synology и RAID-массивы, службы каталогов Active Directory и Open Directory.</p>
+          <p class="project-stack">Windows · macOS · Linux · Synology · RAID · Active Directory · Open Directory · Cisco · WebRTC</p>
+          <div class="project-details">
+            <div>
+              <h4>Инженерная работа</h4>
+              <ul>
+                <li>Эксплуатация рабочих станций, рендер-фермы и сетевых хранилищ.</li>
+                <li>Диагностика сетевых неисправностей и взаимодействие с сетевой службой по инфраструктуре Cisco.</li>
+                <li>Настройка рабочих станций для приёма WebRTC-видеопотоков.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Результат</h4>
+              <p>Техническое сопровождение прямых эфиров федерального уровня и эксплуатация инфраструктуры четырёх студий в 2011–2023 годах.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" aria-labelledby="education-title">
+    <div class="wrap">
+      <h2 id="education-title">Образование и сертификаты</h2>
+      <ul class="education-list">
+        <li><strong>Магистр физики</strong><span>МПГУ</span></li>
+        <li><strong>Экономика и управление на предприятии</strong><span>НИЯУ МИФИ</span></li>
+        <li><strong>Python</strong><span>Яндекс, 2022</span></li>
+        <li><strong>Data Science</strong><span>Яндекс, 2023</span></li>
+        <li><strong>GitLab CI</strong><span>2026</span></li>
+        <li><strong>Kubernetes</strong><span>2026</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="contact-panel">
+        <h2 id="contact-title">Открыт к предложениям о работе</h2>
+        <p>Предпочтительный формат — удалённая работа или гибрид.</p>
+        <ul class="interests" lang="en">
+          <li>DevOps Engineering</li><li>Infrastructure Engineering</li><li>Linux Administration</li><li>Infrastructure Automation</li><li>Observability</li>
+        </ul>
+        <div class="actions">
+          <!-- После согласования добавить ссылку download на публичный PDF. -->
+          <a class="btn honey" href="mailto:avkarpov85@gmail.com">avkarpov85@gmail.com</a>
+          <a class="btn ghost" href="https://github.com/avkarpov-creator">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="portfolio-footer">
+  <div class="wrap"><a href="/">Ладный сайт</a><a href="#main">Наверх</a></div>
+</footer>
+</body>
+</html>

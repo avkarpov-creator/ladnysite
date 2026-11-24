@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 102">
+  <style>
+    rect { fill: #324d40; stroke: #799586; }
+    text { fill: #f5f6f0; font: 600 15px system-ui, sans-serif; text-anchor: middle; }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0l8 4-8 4z" fill="#e8a93a"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#e8a93a" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M125 51H146"/>
+    <path d="M277 51H298"/>
+    <path d="M401 51H422"/>
+    <path d="M583 51H604"/>
+    <path d="M719 51H740"/>
+  </g>
+  <g>
+    <rect x="6" y="25" width="116" height="52" rx="9"/>
+    <text x="64" y="56">Terraform</text>
+    <rect x="150" y="25" width="124" height="52" rx="9"/>
+    <text x="212" y="56">Yandex Cloud</text>
+    <rect x="302" y="25" width="96" height="52" rx="9"/>
+    <text x="350" y="56">Ansible</text>
+    <rect x="426" y="25" width="154" height="52" rx="9"/>
+    <text x="503" y="56">Docker Compose</text>
+    <rect x="608" y="25" width="108" height="52" rx="9"/>
+    <text x="662" y="56">Nginx</text>
+    <rect x="744" y="25" width="150" height="52" rx="9"/>
+    <text x="819" y="56">Application</text>
+  </g>
+</svg>

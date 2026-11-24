@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Студия Лён — салон красоты (демо)</title>
+<meta name="robots" content="noindex">
+<link href="../../fonts/fonts.css" rel="stylesheet">
+<style>
+:root{--blush:#F3E6E1;--plum:#4A2C3A;--rose:#B97A86;--paper:#FBF7F5;--muted:#7C6670}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:400 16px/1.75 Montserrat,sans-serif;color:var(--plum);background:var(--paper)}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:500;line-height:1.1}
+.demo{background:#111;color:#ddd;font-size:13px;text-align:center;padding:8px 12px}
+.demo a{color:#F3C5CF}
+.hero{background:var(--blush);padding:28px 0 0}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:48px;gap:12px;flex-wrap:wrap}
+.logo{font-family:"Cormorant Garamond";font-size:28px;font-weight:600}
+.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end}
+@media (max-width:760px){.grid{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(44px,7vw,84px);margin-bottom:18px}
+.hero p{max-width:36ch;color:var(--muted);margin-bottom:28px}
+.btn{display:inline-block;background:var(--plum);color:#fff;text-decoration:none;padding:14px 28px;border-radius:40px;border:0;font:500 15px Montserrat;cursor:pointer;margin-bottom:56px}
+.arch{height:380px;border-radius:200px 200px 0 0;background:linear-gradient(180deg,#E3C3BF,#C99A9F);position:relative;overflow:hidden}
+.arch svg{position:absolute;bottom:0;left:50%;transform:translateX(-50%)}
+section{padding:80px 0}
+h2{font-size:clamp(34px,5vw,52px);margin-bottom:32px}
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:12px 48px}
+@media (max-width:700px){.menu{grid-template-columns:1fr}}
+.item{display:flex;align-items:baseline;gap:10px;padding:10px 0}
+.item span{flex:1;border-bottom:1px dotted #CBB3BA;transform:translateY(-5px)}
+.item b{font-weight:500;white-space:nowrap}
+.masters{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+.m{text-align:center}
+.m .face{width:150px;height:150px;border-radius:50%;margin:0 auto 14px;background:radial-gradient(circle at 50% 38%,#E8C9C3 0 26%,transparent 27%),radial-gradient(circle at 50% 100%,#B97A86 0 45%,transparent 46%),#F3E6E1}
+.m h3{font-size:26px}
+.m p{color:var(--muted);font-size:14px}
+.book{background:var(--plum);color:#F6EAEE;border-radius:24px;padding:44px;text-align:center}
+.book h2{color:#fff}
+form{max-width:420px;margin:0 auto;text-align:left}
+label{display:block;font-size:13px;margin-bottom:6px;color:#E3CBD3}
+input,select{width:100%;padding:13px 16px;border-radius:30px;border:0;font:inherit;margin-bottom:14px}
+.book .btn{background:#F3C5CF;color:var(--plum);width:100%;margin:6px 0 0}
+.msg{margin-top:12px;min-height:1.6em;text-align:center}
+footer{padding:28px 0;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="demo">Демо-проект студии <a href="/">«Ладный сайт»</a>. Салон вымышлен, запись не отправляется.</div>
+<header class="hero">
+  <div class="wrap">
+    <div class="top"><span class="logo">Студия Лён</span><span>Пн–Вс, 10:00–21:00</span></div>
+    <div class="grid">
+      <div>
+        <h1>Красота без суеты</h1>
+        <p>Стрижки, окрашивание, маникюр и уход за лицом. Пять мастеров, спокойная атмосфера и чай с травами.</p>
+        <a class="btn" href="#book">Записаться онлайн</a>
+      </div>
+      <div class="arch" aria-hidden="true"><svg width="220" height="300" viewBox="0 0 220 300"><path d="M40 300c0-60 30-100 70-100s70 40 70 100z" fill="#4A2C3A" opacity=".85"/><circle cx="110" cy="140" r="48" fill="#F3E6E1"/><path d="M58 150c0-60 30-90 52-90s52 30 52 90c-10-30-28-48-52-48s-42 18-52 48z" fill="#6B3E50"/></svg></div>
+    </div>
+  </div>
+</header>
+<main>
+<section>
+  <div class="wrap">
+    <h2>Услуги и цены</h2>
+    <div class="menu">
+      <div class="item">Женская стрижка<span></span><b>от 1 800 ₽</b></div>
+      <div class="item">Окрашивание в один тон<span></span><b>от 3 500 ₽</b></div>
+      <div class="item">Маникюр с покрытием<span></span><b>2 200 ₽</b></div>
+      <div class="item">Педикюр<span></span><b>2 800 ₽</b></div>
+      <div class="item">Уход за лицом<span></span><b>от 3 000 ₽</b></div>
+      <div class="item">Оформление бровей<span></span><b>1 200 ₽</b></div>
+    </div>
+  </div>
+</section>
+<section style="background:var(--blush)">
+  <div class="wrap">
+    <h2>Мастера</h2>
+    <div class="masters">
+      <div class="m"><div class="face" aria-hidden="true"></div><h3>Анна</h3><p>Стилист, окрашивание</p></div>
+      <div class="m"><div class="face" aria-hidden="true"></div><h3>Мария</h3><p>Маникюр и педикюр</p></div>
+      <div class="m"><div class="face" aria-hidden="true"></div><h3>Ольга</h3><p>Косметолог</p></div>
+    </div>
+  </div>
+</section>
+<section id="book">
+  <div class="wrap">
+    <div class="book">
+      <h2>Запись к мастеру</h2>
+      <form onsubmit="event.preventDefault();this.querySelector('.msg').textContent='Это демо: в настоящем сайте запись пришла бы администратору в Telegram.'">
+        <label for="s">Услуга</label>
+        <select id="s"><option>Стрижка</option><option>Окрашивание</option><option>Маникюр</option><option>Уход за лицом</option></select>
+        <label for="n">Имя</label><input id="n" required autocomplete="name">
+        <label for="p">Телефон</label><input id="p" type="tel" required autocomplete="tel">
+        <button class="btn" type="submit">Записаться</button>
+        <p class="msg" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<footer>Студия Лён — вымышленный салон. Сайт сделан студией «Ладный сайт».</footer>
+</body>
+</html>

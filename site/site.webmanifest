@@ -1,0 +1,11 @@
+{
+  "name": "Ладный сайт",
+  "short_name": "Ладный сайт",
+  "icons": [
+    {"src": "/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/icon-512.png", "sizes": "512x512", "type": "image/png"}
+  ],
+  "theme_color": "#3F6B4E",
+  "background_color": "#F5F6F0",
+  "display": "browser"
+}
